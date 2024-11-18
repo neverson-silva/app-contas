@@ -38,9 +38,8 @@ export const isSameDate = (
   date: Date | dayjs.Dayjs,
   comparedDate: Date | dayjs.Dayjs,
 ): boolean => {
-  date = dayjs(date).format('YYYY-MM-DD')
-  comparedDate = dayjs(comparedDate).format('YYYY-MM-DD')
+  date = dayjs(date).format('YYYY-MM-DD') as any
+  comparedDate = dayjs(comparedDate).format('YYYY-MM-DD') as any
 
-  console.log('essa data', date, comparedDate)
   return date === comparedDate
 }

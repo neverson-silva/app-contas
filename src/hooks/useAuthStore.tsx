@@ -46,8 +46,6 @@ export const useAuthStore = create<UseAuthStoreType>((set, get) => ({
       EStorageTokens.AUTH_USER_BIOMETRICS_DECISION,
     )
 
-    console.log('storage', storageDecision)
-
     if (storageDecision) {
       set({ biometricDecision: Number(storageDecision) })
       return Number(storageDecision) === BiometricDecision.POSITIVE
