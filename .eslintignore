@@ -1,0 +1,4 @@
+prettier.config.js
+.eslint.js
+tsconfig.json
+metro.config.js
